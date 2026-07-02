@@ -1,0 +1,11 @@
+[build]
+  command   = "pnpm --filter @workspace/aidflow-landing... run build"
+  publish   = "artifacts/aidflow-landing/dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
