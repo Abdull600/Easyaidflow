@@ -7,8 +7,11 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center shrink-0">
-          <img src="/logo.png" alt="EasyAidFlow" className="h-14 w-auto" />
+        <Link href="/" className="flex items-center gap-2.5 shrink-0">
+          <img src="/logo-icon.png" alt="" className="h-10 w-auto" />
+          <span className="font-sans text-xl font-bold tracking-tight">
+            <span className="text-foreground">Easy</span><span className="text-accent">Aid</span><span className="text-foreground">Flow</span>
+          </span>
         </Link>
 
         {/* Desktop nav */}
