@@ -43,7 +43,7 @@ export function Hero() {
       <FadeIn delay={0.5}>
         <div className="relative w-full h-[420px] md:h-[560px] overflow-hidden">
           <img
-            src="/hero.webp"
+            src="/hero2.avif"
             alt="A beneficiary receiving a mobile cash transfer"
             className="w-full h-full object-cover object-center"
           />
