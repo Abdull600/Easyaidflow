@@ -22,7 +22,7 @@ export function HowItWorks() {
           {/* Connecting Line */}
           <div className="absolute top-12 left-[10%] right-[10%] h-[1px] bg-border hidden md:block"></div>
           
-          <div className="grid md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {steps.map((step, i) => (
               <FadeIn key={i} delay={i * 0.15} className="relative z-10 flex flex-col items-center text-center group">
                 <div className="w-24 h-24 bg-background border border-border rounded-full flex items-center justify-center text-xl font-serif text-primary mb-8 transition-transform duration-500 group-hover:scale-110 group-hover:border-accent">

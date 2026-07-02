@@ -12,7 +12,7 @@ export function JoinWaitlist() {
             Secure your operations.
           </h2>
           <p className="text-lg text-primary-foreground/70 font-light mb-12 max-w-xl mx-auto leading-relaxed">
-            AidFlow is currently onboarding select institutional partners. Request access to begin the evaluation process for your organization.
+            Easyaidflow is currently onboarding select institutional partners. Request access to begin the evaluation process for your organization.
           </p>
         </FadeIn>
         

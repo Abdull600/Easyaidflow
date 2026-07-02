@@ -3,7 +3,7 @@ import { FadeIn } from '../components/FadeIn';
 export function WhyAidFlow() {
   return (
     <section id="trust" className="py-32 bg-background border-y border-border">
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 md:gap-20 items-center">
         <div>
           <FadeIn>
             <h2 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-4 font-mono">Trust & Security</h2>
@@ -11,7 +11,7 @@ export function WhyAidFlow() {
               Designed for the rigors of institutional audit.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed font-light mb-12">
-              Trust is not assumed; it is cryptographically verified. AidFlow is built on a foundation of absolute data security and unalterable audit trails, meeting the stringent compliance requirements of international law and global financial regulations.
+              Trust is not assumed; it is cryptographically verified. Easyaidflow is built on a foundation of absolute data security and unalterable audit trails, meeting the stringent compliance requirements of international law and global financial regulations.
             </p>
           </FadeIn>
           
@@ -40,7 +40,7 @@ export function WhyAidFlow() {
           </div>
         </div>
         
-        <div className="bg-[#1A1A18] text-white p-8 md:p-16 relative overflow-hidden h-full min-h-[500px] flex items-center justify-center">
+        <div className="bg-[#1A1A18] text-white p-8 md:p-16 relative overflow-hidden min-h-[320px] md:min-h-[500px] flex items-center justify-center">
           <FadeIn delay={0.5} className="w-full">
             {/* Minimal coordinate-system diagram for security */}
             <svg viewBox="0 0 300 300" className="w-full h-auto text-white/20" fill="none" xmlns="http://www.w3.org/2000/svg">

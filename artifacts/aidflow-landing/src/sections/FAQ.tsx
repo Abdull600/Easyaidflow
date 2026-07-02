@@ -5,19 +5,19 @@ import { ChevronDown } from 'lucide-react';
 export function FAQ() {
   const faqs = [
     {
-      q: "How does AidFlow handle poor connectivity in field locations?",
+      q: "How does Easyaidflow handle poor connectivity in field locations?",
       a: "Our field enumeration tools are fully offline-capable. Data can be collected on mobile devices without an internet connection and automatically syncs to the central encrypted database the moment connectivity is restored."
     },
     {
       q: "Can the platform integrate with our existing financial systems?",
-      a: "Yes. AidFlow provides a robust, secure API for seamless integration with standard institutional ERPs (including SAP, Oracle, and Microsoft Dynamics) as well as major mobile money providers in emerging markets."
+      a: "Yes. Easyaidflow provides a robust, secure API for seamless integration with standard institutional ERPs (including SAP, Oracle, and Microsoft Dynamics) as well as major mobile money providers in emerging markets."
     },
     {
       q: "What level of training is required for local field staff?",
       a: "The field interface is designed with radical simplicity and multi-language support, requiring less than an hour of training for enumerators. The administrative dashboard is comprehensive but follows standardized operational workflows."
     },
     {
-      q: "Is AidFlow compliant with GDPR and other data protection laws?",
+      q: "Is Easyaidflow compliant with GDPR and other data protection laws?",
       a: "Absolutely. We adhere to GDPR, HIPAA (where applicable), and specific regional data protection frameworks. Beneficiary data is encrypted, anonymized where required, and stored in compliant server jurisdictions."
     }
   ];
