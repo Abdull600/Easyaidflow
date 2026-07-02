@@ -2,34 +2,42 @@ import * as Accordion from '@radix-ui/react-accordion';
 import { FadeIn } from '../components/FadeIn';
 import { ChevronDown } from 'lucide-react';
 
-export function FAQ() {
-  const faqs = [
-    {
-      q: "How does Easyaidflow handle poor connectivity in field locations?",
-      a: "Our field enumeration tools are fully offline-capable. Data can be collected on mobile devices without an internet connection and automatically syncs to the central encrypted database the moment connectivity is restored."
-    },
-    {
-      q: "Can the platform integrate with our existing financial systems?",
-      a: "Yes. Easyaidflow provides a robust, secure API for seamless integration with standard institutional ERPs (including SAP, Oracle, and Microsoft Dynamics) as well as major mobile money providers in emerging markets."
-    },
-    {
-      q: "What level of training is required for local field staff?",
-      a: "The field interface is designed with radical simplicity and multi-language support, requiring less than an hour of training for enumerators. The administrative dashboard is comprehensive but follows standardized operational workflows."
-    },
-    {
-      q: "Is Easyaidflow compliant with GDPR and other data protection laws?",
-      a: "Absolutely. We adhere to GDPR, HIPAA (where applicable), and specific regional data protection frameworks. Beneficiary data is encrypted, anonymized where required, and stored in compliant server jurisdictions."
-    }
-  ];
+const faqs = [
+  {
+    q: "Is EasyAidFlow only for NGOs?",
+    a: "EasyAidFlow is built primarily for NGOs, humanitarian organizations, foundations, and mission-driven organizations that manage projects and bulk disbursements.",
+  },
+  {
+    q: "Who can we pay using EasyAidFlow?",
+    a: "You can make payments to beneficiaries, field enumerators, volunteers, temporary staff, consultants, vendors, facilitators, and other approved project participants.",
+  },
+  {
+    q: "Can we make bulk payments?",
+    a: "Yes. EasyAidFlow is designed to simplify secure bulk disbursements while giving you complete visibility into every transaction.",
+  },
+  {
+    q: "Can different people approve payments?",
+    a: "Yes. Organizations can create structured approval workflows so payments are reviewed before they are released.",
+  },
+  {
+    q: "Will we be able to generate reports?",
+    a: "Yes. EasyAidFlow helps organizations generate operational and financial reports that support internal reviews and donor reporting.",
+  },
+  {
+    q: "When will EasyAidFlow launch?",
+    a: "We're currently validating the product with early partners. Join the waitlist to receive launch updates and early access.",
+  },
+];
 
+export function FAQ() {
   return (
     <section className="py-32 bg-[#F2EFE9]">
       <div className="container mx-auto px-6 max-w-3xl">
         <FadeIn>
-          <h2 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-4 font-mono text-center">Inquiries</h2>
+          <h2 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-4 font-mono text-center">FAQ</h2>
           <p className="text-3xl md:text-4xl font-serif mb-16 text-center text-foreground">Frequently Asked Questions</p>
         </FadeIn>
-        
+
         <FadeIn delay={0.2}>
           <Accordion.Root type="single" collapsible className="w-full border-t border-border">
             {faqs.map((faq, i) => (

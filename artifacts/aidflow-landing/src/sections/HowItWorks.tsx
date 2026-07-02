@@ -1,27 +1,38 @@
 import { FadeIn } from '../components/FadeIn';
 
-export function HowItWorks() {
-  const steps = [
-    { title: "Define Protocol", desc: "Establish the project framework, budget allocations, and compliance rules within the system." },
-    { title: "Register Entities", desc: "Onboard beneficiaries, enumerators, and vendors through secure offline-capable mobile tools." },
-    { title: "Execute Distributions", desc: "Trigger bulk transfers directly to mobile money wallets, bank accounts, or digital vouchers." },
-    { title: "Generate Reports", desc: "Produce real-time reconciliation reports for institutional donors with a single click." }
-  ];
+const steps = [
+  {
+    title: "Create a Project",
+    desc: "Set up a project, define its funding source, and prepare your payment campaign.",
+  },
+  {
+    title: "Add Recipients",
+    desc: "Import or register beneficiaries, field teams, vendors, volunteers, or any other recipients.",
+  },
+  {
+    title: "Approve Payments",
+    desc: "Route payment batches through your organization's approval workflow.",
+  },
+  {
+    title: "Disburse & Report",
+    desc: "Send payments securely and generate audit-ready reports instantly.",
+  },
+];
 
+export function HowItWorks() {
   return (
     <section className="py-32 bg-[#F2EFE9] border-t border-border/30">
       <div className="container mx-auto px-6">
         <FadeIn>
           <div className="text-center mb-20">
-            <h2 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-4 font-mono">Operational Flow</h2>
-            <p className="text-3xl md:text-4xl font-serif text-foreground">Standardized execution from headquarters to the field.</p>
+            <h2 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-4 font-mono">How It Works</h2>
+            <p className="text-3xl md:text-4xl font-serif text-foreground">Simple enough for every NGO.</p>
           </div>
         </FadeIn>
-        
+
         <div className="relative max-w-5xl mx-auto">
-          {/* Connecting Line */}
           <div className="absolute top-12 left-[10%] right-[10%] h-[1px] bg-border hidden md:block"></div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {steps.map((step, i) => (
               <FadeIn key={i} delay={i * 0.15} className="relative z-10 flex flex-col items-center text-center group">
