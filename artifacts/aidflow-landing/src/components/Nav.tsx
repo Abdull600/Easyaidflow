@@ -7,8 +7,8 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <span className="font-serif text-xl font-bold tracking-tight text-primary">Easyaidflow</span>
+        <Link href="/" className="flex items-center shrink-0">
+          <img src="/logo.png" alt="EasyAidFlow" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop nav */}
